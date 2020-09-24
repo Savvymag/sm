@@ -1,4 +1,4 @@
-<script>
+
                     //<![CDATA[
                     var numPages=3;
                     var firstText ='<i class="fa fa-angle-double-left"></i>';
@@ -18,4 +18,3 @@ function redirectpage(a){jsonstart=(a-1)*perPage;noPage=a;a=document.getElements
 function redirectlabel(a){jsonstart=(a-1)*perPage;noPage=a;a=document.getElementsByTagName("head")[0];var b=document.createElement("script");b.setAttribute("src",home_page+"feeds/posts/summary/-/"+postLabel+"?start-index="+jsonstart+"&max-results=1&alt=json-in-script&callback=finddatepost");a.appendChild(b)}
 function finddatepost(a){post=a.feed.entry[0];a=post.published.$t.substring(0,19)+post.published.$t.substring(23,29);a=encodeURIComponent(a);location.href="page"==currentPage?"/search?updated-max="+a+"&max-results="+perPage+"#PageNo="+noPage:"/search/label/"+postLabel+"?updated-max="+a+"&max-results="+perPage+"#PageNo="+noPage};
                     //]]>
-                  </script>
