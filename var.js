@@ -1,4 +1,4 @@
- <script>
+
                       (function() {
                         var items = <data:post.commentJso/>;
                         var msgs = <data:post.commentMsgs/>;
@@ -174,4 +174,3 @@
                         }
                       })();
                       // ]]>
-                    </script>
